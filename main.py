@@ -37,10 +37,10 @@ pygame.draw.line(screen, WHITE, LOWER_LEFT_BOUND, LOWER_RIGHT_BOUND, 5)
 pygame.draw.line(screen, WHITE, LOWER_RIGHT_BOUND, UPPER_RIGHT_BOUND, 5)
 
 pygame.draw.line(screen, WHITE, (LEFT_BOUND, UPPER_BOUND + GAME_ROW_HEIGHT * 1), (RIGHT_BOUND, UPPER_BOUND + GAME_ROW_HEIGHT * 1), 5)
-for i in xrange(2, GAME_ROWS+7):
+for i in xrange(2, GAME_ROWS + 7):
     pygame.draw.line(screen, WHITE, (LEFT_BOUND, UPPER_BOUND + GAME_ROW_HEIGHT * i), (RIGHT_BOUND, UPPER_BOUND + GAME_ROW_HEIGHT * i), 1)
 
-for i in xrange(1, GAME_COLUMNS+1):
+for i in xrange(1, GAME_COLUMNS + 1):
     pygame.draw.line(screen, WHITE, (LEFT_BOUND + GAME_COLUMN_WIDTH * i, UPPER_BOUND), (LEFT_BOUND + GAME_COLUMN_WIDTH * i, LOWER_BOUND), 1)
 
 while True:
